@@ -12,7 +12,7 @@ const TutorList = (props) => {
             if(searchTerm==""){
               return val;
             }
-            else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
+            else if(val.name.toLowerCase().includes(searchTerm.toLowerCase()) || val.subject.toLowerCase().includes(searchTerm.toLowerCase())){
               return val;
             }
           }).map( (tutor, id) => (
