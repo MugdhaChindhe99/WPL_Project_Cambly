@@ -32,9 +32,9 @@ const TutorList = (props) => {
             disc: `${tutor.description}`,
             display : true
           })
-        }} className="card" key={ id }>
-          <div className="card-body">
-            <img src={tutor.picture} className="card-img-top"/>  
+        }} className="card" style={{display: 'flex', flexDirection: 'row'}} key={ id }>
+          <img src={tutor.picture} className="card-img-top"/> 
+          <div className="card-body" style={{flex: 1}}>
             <h5 className="card-title">{ tutor.name }</h5>
             <h6 className="card-subtitle mb-2 text-muted">{tutor.rating} </h6>
             <h6 className="card-subtitle mb-2 text-muted">{tutor.from} </h6>
