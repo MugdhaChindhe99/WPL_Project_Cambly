@@ -1,5 +1,6 @@
 import './App.css';
 import React,{Component} from 'react';
+import HeaderPage from './components/HeaderPage';
 import TutorList from './components/TutorList';
 
 class App extends Component{
@@ -25,6 +26,7 @@ class App extends Component{
   render (){
     return(
       <div className="wrapper">
+           <HeaderPage></HeaderPage>
            <TutorList tutorlist = {this.state.tutors} />
       </div>
      
